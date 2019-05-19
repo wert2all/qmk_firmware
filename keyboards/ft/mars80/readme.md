@@ -1,20 +1,20 @@
-# E6-V2 Bootmapper Client (ps2avrgb)
+# Mars 8.0
 
-These docs are for the BMC version of the E6-V2 PCB which has an atmega32a microcontroller. Please do not flash this `.hex` file on your atmega32u4 equipped E6-V2. 
+TKL Keyboard with in switch backlight and RGB Underglow. 
 
 Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)  
-Hardware Supported: ps2avrgb E6-V2 with atmega32a microcontroller  
-Hardware Availability: [geekhack.org/index.php?topic=90787.0](https://geekhack.org/index.php?topic=90787.0)  
+Hardware Supported: Mars 8.0 PCB  
+Hardware Availability: [Geekhack Group Buy](https://geekhack.org/index.php?topic=93723.0)  
 
 Make example for this keyboard (after setting up your build environment):
 
-    make exclusive/e6v2/bmc:default
+    make ft/mars80:default
 
 Flashing
 
 ps2avr(GB) boards use an atmega32a microcontroller and a different bootloader. It is not flashable using the regular QMK methods. 
 
-**Reset Key:**  Hold down the key located at `K00`, commonly programmed as left control while plugging in the keyboard. 
+**Reset Key:** Hold down the key located at `K00`, commonly programmed as `Pause/Break` while plugging in the keyboard.
 
 Windows: 
 1. Download [HIDBootFlash](http://vusb.wikidot.com/project:hidbootflash).
@@ -37,7 +37,7 @@ macOS:
     brew install python3
     pip3 install pyusb
     brew install --HEAD https://raw.githubusercontent.com/robertgzr/homebrew-tap/master/bootloadhid.rb
-
+    ```
 4. Place your keyboard into reset. 
 5. Flash the board by typing `bootloadHID -r` followed by the path to your `.hex` file. 
 

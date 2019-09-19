@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x0510
 #define DEVICE_VER      0x0101
 #define MANUFACTURER    di0ib
-#define PRODUCT         MF68
-#define DESCRIPTION     Magicforce 68 with programmable PCB replacement
+#define PRODUCT         wert2all MF68
+#define DESCRIPTION     Custom Magicforce 68
 
 /* key matrix size */
 #define MATRIX_ROWS 8

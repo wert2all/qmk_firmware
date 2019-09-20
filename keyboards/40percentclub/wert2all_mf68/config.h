@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x0510
 #define DEVICE_VER      0x0101
 #define MANUFACTURER    di0ib
-#define PRODUCT         MF68
-#define DESCRIPTION     Magicforce 68 with programmable PCB replacement
+#define PRODUCT         wert2all MF68
+#define DESCRIPTION     Custom Magicforce 68
 
 /* key matrix size */
 #define MATRIX_ROWS 8
@@ -41,7 +41,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
+#define MATRIX_ROW_PINS { F4, B3, F5, B2, F6, F7, B1, B6 }
 #define MATRIX_COL_PINS { D3, D2, D1, D0, D4, C6, D7, E6, B4 }
 #define UNUSED_PINS
 

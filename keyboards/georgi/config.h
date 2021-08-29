@@ -30,6 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_ACTION_FUNCTION
 #define NO_ACTION_ONESHOT
 #define NO_ACTION_MACRO
+#define IGNORE_MOD_TAP_INTERRUPT
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
@@ -37,7 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    g Heavy Industries 
 #define PRODUCT         Georgi
-#define DESCRIPTION     QMK keyboard firmware for Georgi
 
 /* key matrix size */
 #define MATRIX_ROWS 14

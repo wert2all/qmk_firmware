@@ -36,7 +36,7 @@ if [ -z "$RUNTIME" ]; then
 		exit 2
 	fi
 fi
-	
+
 
 # Determine arguments
 if [ $# -eq 0 ]; then

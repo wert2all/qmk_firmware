@@ -25,13 +25,13 @@ enum tap_modes {
     // Modes between TAP_FIRST and TAP_LAST (inclusive) can be switched with a keypress.
     TAP_FIRST,
     TAP_VOLUME = TAP_FIRST,
-    TAP_SCROLL,    
+    TAP_SCROLL,
     TAP_LAST = TAP_SCROLL
 };
 
 static enum tap_modes test_mode = TAP_FIRST;
 
-static void dance_oled_finished(qk_tap_dance_state_t *state, void *user_data) {
+static void dance_oled_finished(tap_dance_state_t *state, void *user_data) {
     if (test_mode < TAP_LAST) {
         ++test_mode;
     } else {
@@ -40,7 +40,7 @@ static void dance_oled_finished(qk_tap_dance_state_t *state, void *user_data) {
     oled_clear();
 }
 
-qk_tap_dance_action_t tap_dance_actions[] = {[TD_OLED] = ACTION_TAP_DANCE_FN(dance_oled_finished)};
+tap_dance_action_t tap_dance_actions[] = {[TD_OLED] = ACTION_TAP_DANCE_FN(dance_oled_finished)};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {LAYOUT_ortho_1x1(TD(TD_OLED))};
 
